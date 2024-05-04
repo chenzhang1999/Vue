@@ -44,6 +44,7 @@ export default {
       })
     }, // load books list when visit the page
     bookSubmit () {
+      console.log(this.inputBook)
       postBook(this.inputBook).then(response => {
         console.log(response)
         this.loadBooks()
